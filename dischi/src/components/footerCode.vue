@@ -1,6 +1,5 @@
 <template>
-    <div>
-        <h1>Footer</h1>
+    <div class="barraDown">
     </div>
 </template>
 
@@ -14,5 +13,9 @@
 </script>
 
 <style lang="scss" scoped>
-
+    .barraDown{
+        width: 100%;
+        height: 10vh;
+        background-color: #2e3a46;
+    }
 </style>
