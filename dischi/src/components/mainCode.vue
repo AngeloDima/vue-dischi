@@ -1,6 +1,8 @@
 <template>
     <div class="Midle">
-        <div v-for="character in characters" :key="character.id"></div>
+        <div v-for="character in characters" :key="character.id">
+        {{characters.poster}}
+        </div>
     </div>
 </template>
 
