@@ -1,7 +1,7 @@
 <template>
   <div>
     <headerCode />
-    <mainCode />
+    <mainCode :characters="characters"/>
     <footerCode />
   </div>
 </template>
@@ -35,6 +35,7 @@ export default {
     .then(({status, data})=>{
       if(status === 200){
         this.characters = data;
+        console.log(this.characters);
       }
     });
 

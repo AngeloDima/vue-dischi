@@ -1,12 +1,15 @@
 <template>
     <div class="Midle">
-        
+        <div v-for="characters in characters" :key="characters.id"></div>
     </div>
 </template>
 
 <script>
     export default {
   name: 'mainCode',
+  props: {
+    characters: Array
+  }
 }
 </script>
 
