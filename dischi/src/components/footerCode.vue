@@ -7,7 +7,6 @@
     export default {
   name: 'footerCode',
 }
-
 </script>
 
 <style lang="scss" scoped>

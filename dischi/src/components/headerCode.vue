@@ -6,7 +6,6 @@
     export default {
   name: 'headerCode',
 }
-
 </script>
 
 <style lang="scss" scoped>
