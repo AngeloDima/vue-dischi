@@ -17,14 +17,26 @@ import footerCode from './components/footerCode.vue';
 
 export default {
   name: 'App',
+  data(){
+    return {
+      characters: []
+    }
+  },
+
   components: {
     headerCode,
     mainCode,
     footerCode,
   },
+
   created(){
     console.log(`Recupero dati ....`);
-    axios.get(`https://flynn.boolean.careers/exercises/api/array/music`).then();
+    axios.get(`https://flynn.boolean.careers/exercises/api/array/music`)
+    .then(({status, data})=>{
+      if(status === 200){
+        this.characters = data;
+      }
+    });
 
   }
 }
