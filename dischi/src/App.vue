@@ -1,7 +1,7 @@
 <template>
   <div>
     <headerCode />
-    <mainCode :characters="characters"/>
+    <mainCode :character="characters"/>
     <footerCode />
   </div>
 </template>

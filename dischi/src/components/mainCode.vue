@@ -1,6 +1,6 @@
 <template>
     <div class="Midle">
-        <div v-for="characters in characters" :key="characters.id"></div>
+        <div v-for="character in characters" :key="character.id"></div>
     </div>
 </template>
 
