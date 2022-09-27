@@ -1,22 +1,19 @@
 <template>
-    <div class="midle">
-
+    <div class="Midle">
+        
     </div>
 </template>
 
 <script>
     export default {
   name: 'mainCode',
-  props: {
-  }
 }
-
 </script>
 
 <style lang="scss" scoped>
-    .midle{
+    .Midle{
         width: 100%;
         height: 80vh;
-        background-color: #1e2d3b;
+        background-color: #00ff84;
     }
-</style>
+    </style>

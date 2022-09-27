@@ -6,8 +6,6 @@
 <script>
     export default {
   name: 'footerCode',
-  props: {
-  }
 }
 
 </script>

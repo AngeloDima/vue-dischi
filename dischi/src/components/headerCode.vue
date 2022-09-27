@@ -5,8 +5,6 @@
 <script>
     export default {
   name: 'headerCode',
-  props: {
-  }
 }
 
 </script>
