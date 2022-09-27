@@ -32,9 +32,9 @@ export default {
   created(){
     console.log(`Recupero dati ....`);
     axios.get(`https://flynn.boolean.careers/exercises/api/array/music`)
-    .then(({status, data})=>{
+    .then(({status, datiCard})=>{
       if(status === 200){
-        this.characters = data;
+        this.characters = datiCard;
         console.log(this.characters);
       }
     });

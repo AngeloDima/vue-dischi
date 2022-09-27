@@ -1,7 +1,7 @@
 <template>
     <div class="Midle">
-        <div v-for="character in characters" :key="character.id">
-        {{characters.poster}}
+        <div v-for="infoElementi in characters" :key="infoElementi.response">
+        {{infoElementi.title}}
         </div>
     </div>
 </template>
