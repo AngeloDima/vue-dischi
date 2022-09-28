@@ -7,8 +7,9 @@
 
                 <div class="card">
                     <img :src="infoElementi.poster" alt="">
+                    {{infoElementi.title}}
                 </div>
-                <!-- {{infoElementi.title}} -->
+                
             </div>
         </div>
 
@@ -47,10 +48,12 @@
                 height: 280px;
                 background-color: aqua;
                 display: flex;
-                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 20px;
                 img{
                     width: 150px;
-                    height: 200px;
+                    height: 170px;
                     
                 }
             }
