@@ -1,14 +1,18 @@
 <template>
     <div class="Midle">
-        <div v-for="infoElementi in characters" :key="infoElementi.response">
 
-            <div class="card">
-                <img :src="infoElementi.poster" alt="">
-                
+
+        <div class="card-container">
+            <div v-for="infoElementi in characters" :key="infoElementi.response">
+
+                <div class="card">
+                    <img :src="infoElementi.poster" alt="">
+                </div>
+                <!-- {{infoElementi.title}} -->
             </div>
-            <!-- {{infoElementi.title}} -->
-            
         </div>
+
+
     </div>
 </template>
 
@@ -28,10 +32,27 @@
         background-color: #00ff84;
         display: flex;
         flex-wrap: wrap;
-        .card{       
-            img{
-                width: 200px;
-                height: 200px;
+        align-content: space-around;
+        justify-content: center;
+        
+        .card-container{
+            width: 90%;
+            height: 70vh;
+            // background-color: rgba(255, 0, 0, 0.315);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            .card{
+                width: 220px;
+                height: 280px;
+                background-color: aqua;
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 150px;
+                    height: 200px;
+                    
+                }
             }
         }
     }
