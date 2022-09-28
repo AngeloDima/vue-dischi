@@ -1,7 +1,13 @@
 <template>
     <div class="Midle">
         <div v-for="infoElementi in characters" :key="infoElementi.response">
-        {{infoElementi.title}}
+
+            <div class="card">
+                <img :src="infoElementi.poster" alt="">
+                
+            </div>
+            <!-- {{infoElementi.title}} -->
+            
         </div>
     </div>
 </template>
@@ -20,5 +26,13 @@
         width: 100%;
         height: 80vh;
         background-color: #00ff84;
+        display: flex;
+        flex-wrap: wrap;
+        .card{       
+            img{
+                width: 200px;
+                height: 200px;
+            }
+        }
     }
     </style>
