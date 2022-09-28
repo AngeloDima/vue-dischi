@@ -7,7 +7,9 @@
 
                 <div class="card">
                     <img :src="infoElementi.poster" alt="">
-                    {{infoElementi.title}}
+                    <p>{{infoElementi.title}}</p>
+                    <p>{{infoElementi.author}}</p>
+                    <p>{{infoElementi.year}}</p>
                 </div>
                 
             </div>
@@ -50,7 +52,11 @@
                 display: flex;
                 align-items: center;
                 flex-direction: column;
-                gap: 20px;
+                p{
+                    margin: 8px 0px;
+                    color: brown;
+                    font-weight: 700;
+                }
                 img{
                     width: 150px;
                     height: 170px;
