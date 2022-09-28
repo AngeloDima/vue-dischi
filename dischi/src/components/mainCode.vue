@@ -7,7 +7,7 @@
 
                 <div class="card">
                     <img :src="infoElementi.poster" alt="">
-                    <p>{{infoElementi.title}}</p>
+                    <h2>{{infoElementi.title}}</h2>
                     <p>{{infoElementi.author}}</p>
                     <p>{{infoElementi.year}}</p>
                 </div>
@@ -31,8 +31,8 @@
 <style lang="scss" scoped>
     .Midle{
         width: 100%;
-        height: 80vh;
-        background-color: #00ff84;
+        height: 90vh;
+        background-color: #1e2d3b;
         display: flex;
         flex-wrap: wrap;
         align-content: space-around;
@@ -40,22 +40,28 @@
         
         .card-container{
             width: 90%;
-            height: 70vh;
+            height: 90%;
             // background-color: rgba(255, 0, 0, 0.315);
             display: flex;
             flex-wrap: wrap;
-            gap: 50px;
+            justify-content: center;
+            gap: 80px;
             .card{
                 width: 220px;
-                height: 280px;
-                background-color: aqua;
+                height: 300px;
+                 background-color: #2e3a46;
                 display: flex;
                 align-items: center;
                 flex-direction: column;
+                h2{
+                    color: white;
+                    text-align: center;
+                }
                 p{
                     margin: 8px 0px;
                     color: brown;
                     font-weight: 700;
+                    text-align: center;
                 }
                 img{
                     width: 150px;
