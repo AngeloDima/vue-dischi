@@ -40,7 +40,7 @@
         
         .card-container{
             width: 90%;
-            height: 90%;
+            height: 80%;
             // background-color: rgba(255, 0, 0, 0.315);
             display: flex;
             flex-wrap: wrap;
